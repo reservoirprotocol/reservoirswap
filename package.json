@@ -1,0 +1,23 @@
+{
+  "name": "reservoirswap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deployUniV2": "npx hardhat run script/deployUniV2.ts",
+    "deployCrossChainAccount": "npx hardhat run script/deployCrossChainAccount.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.12",
+    "hardhat": "^2.22.16",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-deploy-ethers": "^0.4.2"
+  },
+  "dependencies": {
+    "@uniswap/v2-core": "^1.0.1",
+    "ethers": "^6.13.4"
+  }
+}
