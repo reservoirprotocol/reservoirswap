@@ -1,6 +1,5 @@
-import * as UniswapV2Factory from '../artifacts/contracts/v2-core/UniswapV2Factory.sol/UniswapV2Factory.json';
+import * as UniswapV2Factory from '@uniswap/v2-core/build/UniswapV2Factory.json';
 import { ContractFactory, JsonRpcProvider, Wallet } from 'ethers';
-const hre = require("hardhat");
 
 async function main() {
   const abi = UniswapV2Factory.abi;
