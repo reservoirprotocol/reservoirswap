@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "npx hardhat compile",
     "deployUniV2": "npx hardhat run script/deployUniV2.ts",
     "deployUniswapV2Router02": "npx hardhat run script/deployUniswapV2Router02.ts",
     "deployCrossChainAccount": "npx hardhat run script/deployCrossChainAccount.ts"

@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import '@nomicfoundation/hardhat-verify';
 require('hardhat-deploy');
 
 const config: HardhatUserConfig = {
@@ -31,6 +32,12 @@ const config: HardhatUserConfig = {
     overrides: {
       "contracts/CrossChainAccount.sol": {
         version: "0.7.6",
+        settings: {
+          optimizer: {
+            enabled: false,
+            runs: 200
+          }
+        }
       },
       "contracts/v2-core/UniswapV2Factory.sol": {
         version: "0.5.16",
